@@ -3,7 +3,8 @@ Param(
 	[String[]]
 	$args
 )
+$classpath = ".\;C:\Users\safda\Coding"
 $programFile = $args[0]+".java"
 $classFile = $args[0]
-javac $programFile
-java $classFile $args[1]
+javac -cp $classpath $programFile
+java -cp $classpath $classFile
