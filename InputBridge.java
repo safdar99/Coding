@@ -11,4 +11,8 @@ class InputBridge {
 			return null;
 		}
 	}
+
+	public static PrintStream getOutputStream() {
+			return System.out;
+	}
 }
