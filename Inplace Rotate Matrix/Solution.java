@@ -1,7 +1,8 @@
 import java.util.*;
 import java.lang.*;
 import java.io.*;
-class GFG {
+
+class Solution {
 	static class Point {
 		int r;	//row
 		int c;	//column
@@ -43,7 +44,6 @@ class GFG {
 	static void roatateMatrix(int[][] mat, int size, StringBuffer ans) {
 		int i = 0;
 		int j = 0;
-		String pad = "";
 		int x = size-1;
 		while (i < size/2) {	
 			int k = -1;
@@ -55,7 +55,6 @@ class GFG {
 				swap(mat, c, a);
 				swap(mat, a, b);
 				swap(mat, b, d);
-				pad += "	";
 			}
 			i++;
 			j++;
