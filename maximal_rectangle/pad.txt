@@ -1,0 +1,6 @@
+endX[i][j] = min(down[i+1][j], endX[i+1][j+1])
+endY[i][j] = min(right[i][j+1], endY[i+1][j+1])
+
+
+endX[3][4] = min(down[4][4], endX[4][5])  -> 4
+endY[3][4] = min(right[3][5], endY[4][5]) -> 5
